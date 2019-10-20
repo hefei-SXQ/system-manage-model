@@ -39,10 +39,10 @@ public class ActModuleController {
         //初始化一个空模型
         Model model = rs.newModel();
 
-        String name = "process1";
-        String description = "another process";
+        String name = "process2";
+        String description = "the third process";
         int version = 1;
-        String key = "process1";
+        String key = "process2";
         ObjectNode modelNode = objectMapper.createObjectNode();
         modelNode.put(ModelDataJsonConstants.MODEL_NAME, name);
         modelNode.put(ModelDataJsonConstants.MODEL_DESCRIPTION, description);
@@ -61,7 +61,7 @@ public class ActModuleController {
         editerNode.put("resourceId","canvas");
         ObjectNode stencilSetNode = objectMapper.createObjectNode();
         stencilSetNode.put("namespace", "http://b3mn.org/stencilset/bpmn2.0#");
-        editerNode.set("stencilSet", stencilSetNode);
+        editerNode.set("stencilset", stencilSetNode);
         rs.addModelEditorSource(id, editerNode.toString().getBytes("utf-8"));
 
         return id;

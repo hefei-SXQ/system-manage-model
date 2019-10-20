@@ -11,7 +11,10 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.ResourceUtils;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Date;
 import java.util.List;
 
@@ -56,5 +59,13 @@ public class ExampleApplicationTests {
             System.out.println(user.getUserId());
         }
 
+    }
+
+    @Test
+    public void testGetResources() throws IOException {
+        System.out.println("开始。。。");
+        InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream("stencilset.json");
+        InputStream stream = ResourceUtils.getURL("target\\classes\\stencilset.json").openStream();
+        System.out.println(resourceAsStream.available());
     }
 }

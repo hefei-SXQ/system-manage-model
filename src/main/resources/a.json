@@ -1,3 +1,4 @@
-{"name":"process1","description":"another process","revision":1,"modelId":"2501",
-  "model":{"id":"canvas","resourceId":"canvas",
-    "stencilSet":{"namespace":"http://b3mn.org/stencilset/bpmn2.0#"}}}
+{
+  "title": "zhangsan",
+  "age": 13
+}
