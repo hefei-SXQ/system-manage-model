@@ -19,12 +19,7 @@
 'use strict';
 
 var ACTIVITI = ACTIVITI || {};
-var pathName = window.document.location.pathname;
-var projectName = pathName.substring(0, pathName.substr(1).indexOf('/') + 1);
-// ACTIVITI.CONFIG = {
-// 	'contextRoot' : projectName + '/service'
-// };
-ACTIVITI.CONFIG = {
-    'contextRoot' : ""
-};
 
+ACTIVITI.CONFIG = {
+	'contextRoot' : '/act',
+};

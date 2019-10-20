@@ -26,15 +26,9 @@
     <link rel="stylesheet" href="editor-app/css/style-editor.css">
 
 </head>
-<script type="text/javascript">
-	function CloseWindow(action) {
-		if (window.CloseOwnerWindow) return window.CloseOwnerWindow(action);
-		else window.close();            
-	}
-</script>
 <body>
 
-	<div style="display:none" class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="main-header">
+	<div class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="main-header">
 	    <div class="navbar-header">
             <a href="" ng-click="backToLanding()" class="navbar-brand"
                title="{{'GENERAL.MAIN-TITLE' | translate}}"><span

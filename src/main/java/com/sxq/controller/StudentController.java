@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/student")
 public class StudentController {
-    @Qualifier("studentServiceImpl")
-    @Autowired
-    StudentService service;
-
-    @RequestMapping("/query")
-    public Student queryByNo(@RequestParam("sno") String sno){
-        return service.queryStudentByNo(sno);
-    }
+//    @Qualifier("studentServiceImpl")
+//    @Autowired
+//    StudentService service;
+//
+//    @RequestMapping("/query")
+//    public Student queryByNo(@RequestParam("sno") String sno){
+//        return service.queryStudentByNo(sno);
+//    }
 }
